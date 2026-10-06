@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-peela" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#18181b" />
+    </linearGradient>
+    <linearGradient id="accent-peela" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg-peela)" rx="16" />
+  <rect x="50" y="40" width="700" height="420" rx="12" fill="#090d16" stroke="#f59e0b" stroke-opacity="0.3" stroke-width="1.5" />
+  
+  <!-- Title bar -->
+  <rect x="50" y="40" width="700" height="40" rx="12" fill="#182235" />
+  <circle cx="75" cy="60" r="5" fill="#ef4444" />
+  <circle cx="95" cy="60" r="5" fill="#f59e0b" />
+  <circle cx="115" cy="60" r="5" fill="#10b981" />
+  <text x="400" y="65" fill="#fde68a" font-family="sans-serif" font-size="12" text-anchor="middle" font-weight="600">Peela — Driver &amp; Payment Service Platform Admin</text>
+
+  <!-- Left: Driver Management & Dispatch -->
+  <g transform="translate(70, 95)">
+    <rect x="0" y="0" width="320" height="345" rx="8" fill="#111827" stroke="#374151" />
+    <text x="20" y="30" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">🚗 Driver Dispatch Console</text>
+    <text x="20" y="52" fill="#9ca3af" font-family="sans-serif" font-size="11">Active fleet monitoring &amp; route allocation</text>
+
+    <!-- Driver 1 Card -->
+    <rect x="15" y="70" width="290" height="65" rx="6" fill="#1f2937" stroke="#f59e0b" stroke-opacity="0.4" />
+    <circle cx="35" cy="102" r="14" fill="#f59e0b" />
+    <text x="35" y="106" fill="#000" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">DR</text>
+    <text x="58" y="94" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold">Tariq Khan (Toyota Prius)</text>
+    <text x="58" y="112" fill="#10b981" font-family="sans-serif" font-size="11">● Active Ride #8492 • In Transit</text>
+    <text x="270" y="102" fill="#fbbf24" font-family="sans-serif" font-size="11" text-anchor="end" font-weight="bold">$42.50</text>
+
+    <!-- Driver 2 Card -->
+    <rect x="15" y="145" width="290" height="65" rx="6" fill="#1f2937" stroke="#374151" />
+    <circle cx="35" cy="177" r="14" fill="#3b82f6" />
+    <text x="35" y="181" fill="#fff" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">DR</text>
+    <text x="58" y="169" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold">Hamza Ali (Honda Civic)</text>
+    <text x="58" y="187" fill="#60a5fa" font-family="sans-serif" font-size="11">● Waiting for Dispatch • Sector F</text>
+    <text x="270" y="177" fill="#9ca3af" font-family="sans-serif" font-size="11" text-anchor="end">Idle 4m</text>
+
+    <!-- Stat Bar -->
+    <rect x="15" y="220" width="290" height="110" rx="6" fill="#182235" />
+    <text x="30" y="245" fill="#fde68a" font-family="sans-serif" font-size="11" font-weight="bold">FLEET SUMMARY</text>
+    <text x="30" y="275" fill="#ffffff" font-family="sans-serif" font-size="24" font-weight="bold">142 Drivers</text>
+    <text x="30" y="300" fill="#a7f3d0" font-family="sans-serif" font-size="11">96.4% On-time Completion Rate</text>
+  </g>
+
+  <!-- Right: Payment & Settlement Workflows -->
+  <g transform="translate(410, 95)">
+    <rect x="0" y="0" width="320" height="345" rx="8" fill="#111827" stroke="#374151" />
+    <text x="20" y="30" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">💳 Payment &amp; Payout Engine</text>
+    <text x="20" y="52" fill="#9ca3af" font-family="sans-serif" font-size="11">Automated daily disbursements &amp; ledger</text>
+
+    <!-- Total processed card -->
+    <rect x="15" y="70" width="290" height="85" rx="6" fill="url(#accent-peela)" />
+    <text x="30" y="98" fill="#78350f" font-family="sans-serif" font-size="11" font-weight="bold">TODAY'S VOLUME</text>
+    <text x="30" y="132" fill="#000000" font-family="sans-serif" font-size="26" font-weight="extrabold">$18,940.00</text>
+    <text x="280" y="130" fill="#78350f" font-family="sans-serif" font-size="11" text-anchor="end">+18.2% vs yesterday</text>
+
+    <!-- Recent settlement item 1 -->
+    <rect x="15" y="165" width="290" height="48" rx="6" fill="#1f2937" stroke="#374151" />
+    <text x="30" y="186" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="bold">Batch Payout #9021 (48 Drivers)</text>
+    <text x="30" y="202" fill="#10b981" font-family="sans-serif" font-size="10">✓ Completed via Direct Bank Transfer</text>
+    <text x="280" y="194" fill="#ffffff" font-family="sans-serif" font-size="11" text-anchor="end" font-weight="bold">$4,850.00</text>
+
+    <!-- Recent settlement item 2 -->
+    <rect x="15" y="222" width="290" height="48" rx="6" fill="#1f2937" stroke="#374151" />
+    <text x="30" y="243" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="bold">Gateway Split &amp; Commission Fee</text>
+    <text x="30" y="259" fill="#60a5fa" font-family="sans-serif" font-size="10">Reconciled in Sequelize DB</text>
+    <text x="280" y="251" fill="#ffffff" font-family="sans-serif" font-size="11" text-anchor="end" font-weight="bold">$947.00</text>
+
+    <!-- Bottom security tag -->
+    <rect x="15" y="280" width="290" height="50" rx="6" fill="#182235" />
+    <text x="30" y="302" fill="#9ca3af" font-family="sans-serif" font-size="10">Database: MySQL (Sequelize ORM)</text>
+    <text x="30" y="318" fill="#fbbf24" font-family="sans-serif" font-size="11" font-weight="bold">🔒 End-to-End JWT Auth &amp; Role Guard</text>
+  </g>
+</svg>

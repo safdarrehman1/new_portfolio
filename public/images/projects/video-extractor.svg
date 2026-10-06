@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-video" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+    <linearGradient id="accent-py" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff4b4b" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg-video)" rx="16" />
+  <rect x="50" y="40" width="700" height="420" rx="12" fill="#0c101d" stroke="#f59e0b" stroke-opacity="0.3" stroke-width="1.5" />
+  
+  <!-- Title bar -->
+  <rect x="50" y="40" width="700" height="40" rx="12" fill="#182035" />
+  <circle cx="75" cy="60" r="5" fill="#ef4444" />
+  <circle cx="95" cy="60" r="5" fill="#f59e0b" />
+  <circle cx="115" cy="60" r="5" fill="#10b981" />
+  <text x="400" y="65" fill="#fde68a" font-family="sans-serif" font-size="12" text-anchor="middle" font-weight="600">AI Video Highlight Extractor — Python &amp; Streamlit Engine</text>
+
+  <!-- Left: Scene Detection & Motion Scoring -->
+  <g transform="translate(70, 95)">
+    <rect x="0" y="0" width="320" height="345" rx="8" fill="#111827" stroke="#374151" />
+    <text x="20" y="30" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">🎬 Scene Scoring &amp; Analysis</text>
+    <text x="20" y="52" fill="#fde68a" font-family="sans-serif" font-size="11">PySceneDetect &amp; OpenCV Optical Flow</text>
+
+    <!-- Waveform Graph Mock -->
+    <rect x="15" y="70" width="290" height="100" rx="6" fill="#1f2937" stroke="#374151" />
+    <text x="30" y="92" fill="#9ca3af" font-family="sans-serif" font-size="10">AUDIO ENERGY &amp; MOTION DENSITY GRAPH</text>
+    <!-- Waveform bars -->
+    <path d="M 30 145 L 45 130 L 60 140 L 75 110 L 90 135 L 105 100 L 120 150 L 135 125 L 150 95 L 165 140 L 180 90 L 195 110 L 210 85 L 225 130 L 240 95 L 255 120 L 270 145" fill="none" stroke="#f59e0b" stroke-width="2.5" />
+    <circle cx="210" cy="85" r="5" fill="#ff4b4b" />
+    <text x="210" y="75" fill="#ff4b4b" font-family="sans-serif" font-size="9" text-anchor="middle" font-weight="bold">PEAK SCORE (9.8/10)</text>
+
+    <!-- Scene Candidate -->
+    <rect x="15" y="180" width="290" height="65" rx="6" fill="#1f2937" stroke="#f59e0b" stroke-opacity="0.4" />
+    <text x="30" y="202" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="bold">Scene #04: Climax Chase Sequence</text>
+    <text x="30" y="222" fill="#34d399" font-family="sans-serif" font-size="10">Timestamp: 00:14:22 → 00:15:48 (Score: 9.6/10)</text>
+    <text x="280" y="212" fill="#38bdf8" font-family="sans-serif" font-size="10" text-anchor="end">Extracted</text>
+
+    <!-- Processing Tag -->
+    <rect x="15" y="255" width="290" height="75" rx="6" fill="url(#accent-py)" />
+    <text x="30" y="280" fill="#000" font-family="sans-serif" font-size="11" font-weight="bold">STREAMLIT INTERFACE</text>
+    <text x="30" y="308" fill="#ffffff" font-family="sans-serif" font-size="18" font-weight="extrabold">Instant MP4 Clip Exporter</text>
+  </g>
+
+  <!-- Right: Librosa & FFmpeg Pipeline -->
+  <g transform="translate(410, 95)">
+    <rect x="0" y="0" width="320" height="345" rx="8" fill="#111827" stroke="#374151" />
+    <text x="20" y="30" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">⚡ Signal Processing Pipeline</text>
+    <text x="20" y="52" fill="#9ca3af" font-family="sans-serif" font-size="11">FFmpeg rendering &amp; audio spectrograms</text>
+
+    <!-- Pipeline Step 1 -->
+    <rect x="15" y="70" width="290" height="60" rx="6" fill="#1f2937" stroke="#374151" />
+    <text x="30" y="92" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="bold">1. Motion &amp; Edge Flux (OpenCV)</text>
+    <text x="30" y="112" fill="#38bdf8" font-family="sans-serif" font-size="10">Identifies fast-moving actors &amp; camera pan speed</text>
+
+    <!-- Pipeline Step 2 -->
+    <rect x="15" y="140" width="290" height="60" rx="6" fill="#1f2937" stroke="#374151" />
+    <text x="30" y="162" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="bold">2. Audio Pitch &amp; Decibel Surge (Librosa)</text>
+    <text x="30" y="182" fill="#34d399" font-family="sans-serif" font-size="10">Filters background score swell &amp; dramatic dialogue</text>
+
+    <!-- Pipeline Step 3 -->
+    <rect x="15" y="210" width="290" height="120" rx="6" fill="#0c101d" stroke="#f59e0b" stroke-opacity="0.3" />
+    <text x="30" y="235" fill="#fde68a" font-family="sans-serif" font-size="11" font-weight="bold">PYTHON AI TOOLING</text>
+    <text x="30" y="260" fill="#ffffff" font-family="sans-serif" font-size="12">Python • Streamlit • OpenCV • PySceneDetect</text>
+    <text x="30" y="282" fill="#34d399" font-family="sans-serif" font-size="11">✓ Librosa Audio Spectrograms • FFmpeg Batching</text>
+    <text x="30" y="302" fill="#9ca3af" font-family="sans-serif" font-size="10">Personal AI Engineering Project (In Progress)</text>
+  </g>
+</svg>

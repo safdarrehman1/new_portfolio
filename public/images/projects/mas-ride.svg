@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-ride" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#182136" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg-ride)" rx="16" />
+  
+  <rect x="50" y="40" width="700" height="420" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+  <rect x="50" y="40" width="700" height="40" rx="12" fill="#1e293b" />
+  <circle cx="75" cy="60" r="5" fill="#ef4444" />
+  <circle cx="95" cy="60" r="5" fill="#f59e0b" />
+  <circle cx="115" cy="60" r="5" fill="#10b981" />
+  <text x="400" y="65" fill="#94a3b8" font-family="sans-serif" font-size="12" text-anchor="middle" font-weight="600">MAS Ride &amp; Logistics Control Dispatch Center</text>
+
+  <!-- Top Metric Cards -->
+  <g transform="translate(70, 95)">
+    <rect x="0" y="0" width="150" height="70" rx="8" fill="#1e293b" stroke="#334155" />
+    <text x="15" y="24" fill="#94a3b8" font-family="sans-serif" font-size="11">Active Rides</text>
+    <text x="15" y="52" fill="#38bdf8" font-family="sans-serif" font-size="20" font-weight="bold">342</text>
+    
+    <rect x="170" y="0" width="150" height="70" rx="8" fill="#1e293b" stroke="#334155" />
+    <text x="185" y="24" fill="#94a3b8" font-family="sans-serif" font-size="11">Active Drivers</text>
+    <text x="185" y="52" fill="#2dd4bf" font-family="sans-serif" font-size="20" font-weight="bold">1,280</text>
+
+    <rect x="340" y="0" width="150" height="70" rx="8" fill="#1e293b" stroke="#334155" />
+    <text x="355" y="24" fill="#94a3b8" font-family="sans-serif" font-size="11">Parcels in Transit</text>
+    <text x="355" y="52" fill="#a855f7" font-family="sans-serif" font-size="20" font-weight="bold">519</text>
+
+    <rect x="510" y="0" width="150" height="70" rx="8" fill="#1e293b" stroke="#334155" />
+    <text x="525" y="24" fill="#94a3b8" font-family="sans-serif" font-size="11">Surge Multiplier</text>
+    <text x="525" y="52" fill="#fbbf24" font-family="sans-serif" font-size="20" font-weight="bold">1.4x</text>
+  </g>
+
+  <!-- Live Dispatch Map & Driver Feed -->
+  <g transform="translate(70, 180)">
+    <!-- Map Canvas Mock -->
+    <rect x="0" y="0" width="420" height="260" rx="8" fill="#111827" stroke="#334155" />
+    <!-- Roads -->
+    <path d="M20 50 L400 50 M120 10 L120 250 M280 10 L280 250 M50 200 L380 100" stroke="#1f2937" stroke-width="12" stroke-linecap="round" />
+    <path d="M20 50 L400 50 M120 10 L120 250 M280 10 L280 250 M50 200 L380 100" stroke="#374151" stroke-width="2" stroke-dasharray="6 4" />
+    <!-- Driver Pins -->
+    <circle cx="120" cy="50" r="10" fill="#38bdf8" />
+    <circle cx="120" cy="50" r="18" fill="#38bdf8" opacity="0.3" />
+    <circle cx="280" cy="130" r="10" fill="#2dd4bf" />
+    <circle cx="280" cy="130" r="18" fill="#2dd4bf" opacity="0.3" />
+    <circle cx="200" cy="150" r="10" fill="#f59e0b" />
+    
+    <!-- Dispatch Feed -->
+    <rect x="440" y="0" width="220" height="260" rx="8" fill="#1e293b" stroke="#334155" />
+    <text x="455" y="28" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="bold">Live Dispatch Queue</text>
+    
+    <rect x="450" y="45" width="200" height="50" rx="6" fill="#0f172a" stroke="#22c55e" stroke-width="1" />
+    <text x="460" y="65" fill="#f8fafc" font-family="sans-serif" font-size="11">Ride #8942 • Assigned</text>
+    <text x="460" y="82" fill="#94a3b8" font-family="sans-serif" font-size="10">Driver: Tariq M. • 4 mins away</text>
+
+    <rect x="450" y="105" width="200" height="50" rx="6" fill="#0f172a" stroke="#3b82f6" stroke-width="1" />
+    <text x="460" y="125" fill="#f8fafc" font-family="sans-serif" font-size="11">Parcel #4401 • In Transit</text>
+    <text x="460" y="142" fill="#94a3b8" font-family="sans-serif" font-size="10">Destination: Sector G-11</text>
+
+    <rect x="450" y="165" width="200" height="50" rx="6" fill="#0f172a" stroke="#eab308" stroke-width="1" />
+    <text x="460" y="185" fill="#f8fafc" font-family="sans-serif" font-size="11">Carpool #119 • Matching</text>
+    <text x="460" y="202" fill="#94a3b8" font-family="sans-serif" font-size="10">2 of 3 Passengers matched</text>
+  </g>
+</svg>

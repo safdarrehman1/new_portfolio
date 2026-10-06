@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#064e3b" />
+    </linearGradient>
+    <linearGradient id="avatar-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#14b8a6" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Circle Glow -->
+  <circle cx="300" cy="300" r="280" fill="url(#bg-grad)" />
+  <circle cx="300" cy="300" r="275" fill="none" stroke="url(#avatar-glow)" stroke-width="3" stroke-dasharray="10 5" opacity="0.6" />
+  
+  <!-- Subtle glowing core -->
+  <circle cx="300" cy="240" r="140" fill="#6366f1" opacity="0.15" filter="url(#glow)" />
+
+  <!-- Abstract Head & Shoulders -->
+  <circle cx="300" cy="230" r="85" fill="#38bdf8" opacity="0.9" />
+  <circle cx="300" cy="230" r="80" fill="#1e293b" />
+  
+  <!-- Face Details Minimalist Modern -->
+  <path d="M260 215 C270 210, 285 210, 290 215" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" fill="none" />
+  <path d="M310 215 C315 210, 330 210, 340 215" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" fill="none" />
+  <circle cx="275" cy="230" r="6" fill="#38bdf8" />
+  <circle cx="325" cy="230" r="6" fill="#38bdf8" />
+  <!-- Confident smile -->
+  <path d="M275 260 Q300 280 325 260" stroke="#2dd4bf" stroke-width="4" stroke-linecap="round" fill="none" />
+  
+  <!-- Modern Hairline / Styling -->
+  <path d="M220 210 Q300 130 380 210 Q360 160 300 160 Q240 160 220 210 Z" fill="#6366f1" />
+
+  <!-- Body / Shoulders -->
+  <path d="M160 490 C160 370, 220 340, 300 340 C380 340, 440 370, 440 490 Z" fill="#0f172a" stroke="url(#avatar-glow)" stroke-width="3" />
+  <path d="M240 345 L300 420 L360 345" fill="none" stroke="#6366f1" stroke-width="3" />
+
+  <!-- Laptop / Code workspace -->
+  <rect x="200" y="430" width="200" height="110" rx="12" fill="#1e1b4b" stroke="#38bdf8" stroke-width="3" />
+  <path d="M170 540 L430 540" stroke="#38bdf8" stroke-width="6" stroke-linecap="round" />
+  <!-- Screen code lines -->
+  <rect x="220" y="450" width="70" height="8" rx="4" fill="#6366f1" />
+  <rect x="300" y="450" width="80" height="8" rx="4" fill="#2dd4bf" />
+  <rect x="220" y="470" width="120" height="8" rx="4" fill="#38bdf8" />
+  <rect x="220" y="490" width="90" height="8" rx="4" fill="#a855f7" />
+
+  <!-- Floating Tech Badges -->
+  <g transform="translate(70, 150)">
+    <rect width="80" height="32" rx="16" fill="#1e293b" stroke="#61dafb" stroke-width="2" />
+    <text x="40" y="21" fill="#61dafb" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">React</text>
+  </g>
+
+  <g transform="translate(450, 160)">
+    <rect width="80" height="32" rx="16" fill="#1e293b" stroke="#ffffff" stroke-width="2" />
+    <text x="40" y="21" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Next.js</text>
+  </g>
+
+  <g transform="translate(460, 360)">
+    <rect width="80" height="32" rx="16" fill="#1e293b" stroke="#339933" stroke-width="2" />
+    <text x="40" y="21" fill="#339933" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Node.js</text>
+  </g>
+
+  <g transform="translate(60, 370)">
+    <rect width="80" height="32" rx="16" fill="#1e293b" stroke="#14b8a6" stroke-width="2" />
+    <text x="40" y="21" fill="#14b8a6" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">FullStack</text>
+  </g>
+</svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-health" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#082f49" />
+      <stop offset="100%" stop-color="#075985" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg-health)" rx="16" />
+  <rect x="50" y="40" width="700" height="420" rx="12" fill="#0c4a6e" stroke="#0284c7" stroke-width="1.5" />
+  <rect x="50" y="40" width="700" height="40" rx="12" fill="#0369a1" />
+  <circle cx="75" cy="60" r="5" fill="#ef4444" />
+  <circle cx="95" cy="60" r="5" fill="#f59e0b" />
+  <circle cx="115" cy="60" r="5" fill="#10b981" />
+  <text x="400" y="65" fill="#f0f9ff" font-family="sans-serif" font-size="12" text-anchor="middle" font-weight="600">HealthCheck Telehealth &amp; Medical Consultations</text>
+
+  <!-- Left: Doctor Profile & Booking -->
+  <g transform="translate(70, 95)">
+    <rect x="0" y="0" width="320" height="345" rx="8" fill="#082f49" stroke="#0284c7" />
+    <circle cx="60" cy="50" r="28" fill="#38bdf8" />
+    <text x="100" y="45" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">Dr. Sarah Jenkins</text>
+    <text x="100" y="62" fill="#7dd3fc" font-family="sans-serif" font-size="11">Cardiologist • 12 Yrs Exp</text>
+    <text x="100" y="78" fill="#34d399" font-family="sans-serif" font-size="10">⭐ 4.9 (420+ Reviews)</text>
+
+    <!-- Appointment Slot Selector -->
+    <text x="20" y="115" fill="#f0f9ff" font-family="sans-serif" font-size="12" font-weight="bold">Available Consultation Slots:</text>
+    
+    <rect x="20" y="130" width="85" height="35" rx="6" fill="#0369a1" stroke="#38bdf8" />
+    <text x="62" y="152" fill="#ffffff" font-family="sans-serif" font-size="11" text-anchor="middle">10:00 AM</text>
+
+    <rect x="115" y="130" width="85" height="35" rx="6" fill="#0c4a6e" />
+    <text x="157" y="152" fill="#cbd5e1" font-family="sans-serif" font-size="11" text-anchor="middle">11:30 AM</text>
+
+    <rect x="210" y="130" width="85" height="35" rx="6" fill="#0c4a6e" />
+    <text x="252" y="152" fill="#cbd5e1" font-family="sans-serif" font-size="11" text-anchor="middle">02:15 PM</text>
+
+    <!-- Consultation Mode -->
+    <text x="20" y="195" fill="#f0f9ff" font-family="sans-serif" font-size="12" font-weight="bold">Consultation Mode:</text>
+    <rect x="20" y="210" width="275" height="40" rx="6" fill="#0284c7" />
+    <text x="35" y="235" fill="#ffffff" font-family="sans-serif" font-size="12">📹 HD Encrypted Video Call (30 mins)</text>
+
+    <!-- Action Button -->
+    <rect x="20" y="270" width="275" height="50" rx="8" fill="#10b981" />
+    <text x="157" y="301" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">Confirm Booking ($45)</text>
+  </g>
+
+  <!-- Right: Symptom Checker & Health Records -->
+  <g transform="translate(410, 95)">
+    <rect x="0" y="0" width="320" height="345" rx="8" fill="#082f49" stroke="#0284c7" />
+    <text x="20" y="30" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">📋 Patient Medical Vault</text>
+    <text x="20" y="50" fill="#7dd3fc" font-family="sans-serif" font-size="11">Encrypted EHR &amp; Lab Reports</text>
+
+    <!-- Document 1 -->
+    <rect x="20" y="75" width="280" height="60" rx="6" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1" />
+    <text x="35" y="98" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold">Cardio Stress Test Report.pdf</text>
+    <text x="35" y="118" fill="#34d399" font-family="sans-serif" font-size="10">Verified • Dr. Jenkins • 3 days ago</text>
+
+    <!-- Document 2 -->
+    <rect x="20" y="145" width="280" height="60" rx="6" fill="#0c4a6e" />
+    <text x="35" y="168" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold">Blood Chemistry Panel.pdf</text>
+    <text x="35" y="188" fill="#94a3b8" font-family="sans-serif" font-size="10">Labcorp Verified • 2 weeks ago</text>
+
+    <!-- Vital Stats Widget -->
+    <rect x="20" y="215" width="280" height="110" rx="6" fill="#0369a1" />
+    <text x="35" y="240" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold">Latest Vitals Tracked</text>
+    <text x="35" y="265" fill="#e0f2fe" font-family="sans-serif" font-size="11">Blood Pressure: <tspan font-weight="bold" fill="#ffffff">120/78 mmHg</tspan></text>
+    <text x="35" y="290" fill="#e0f2fe" font-family="sans-serif" font-size="11">Resting Heart Rate: <tspan font-weight="bold" fill="#ffffff">68 bpm (Normal)</tspan></text>
+  </g>
+</svg>

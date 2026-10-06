@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#141a29" />
+    </linearGradient>
+    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#14b8a6" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg-grad)" rx="16" />
+  
+  <!-- Subtle Grid Pattern -->
+  <g opacity="0.1" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="160" y1="0" x2="160" y2="500" />
+    <line x1="320" y1="0" x2="320" y2="500" />
+    <line x1="480" y1="0" x2="480" y2="500" />
+    <line x1="640" y1="0" x2="640" y2="500" />
+  </g>
+
+  <!-- App Window Container -->
+  <rect x="50" y="40" width="700" height="420" rx="12" fill="#111827" stroke="#374151" stroke-width="1.5" />
+  
+  <!-- Window Header -->
+  <rect x="50" y="40" width="700" height="40" rx="12" fill="#1f2937" />
+  <circle cx="75" cy="60" r="5" fill="#ef4444" />
+  <circle cx="95" cy="60" r="5" fill="#f59e0b" />
+  <circle cx="115" cy="60" r="5" fill="#10b981" />
+  <text x="400" y="65" fill="#9ca3af" font-family="sans-serif" font-size="12" text-anchor="middle" font-weight="600">Intelligent Hiring &amp; Skills Gap Analysis • AI Dashboard</text>
+
+  <!-- Left Sidebar / Candidate List -->
+  <rect x="70" y="100" width="180" height="340" rx="8" fill="#1a2234" stroke="#2d3748" stroke-width="1" />
+  <text x="85" y="125" fill="#e2e8f0" font-family="sans-serif" font-size="13" font-weight="bold">Candidates (AI Ranked)</text>
+  
+  <!-- Candidate Card 1 -->
+  <rect x="80" y="140" width="160" height="60" rx="6" fill="#243048" stroke="#3b82f6" stroke-width="1" />
+  <circle cx="100" cy="165" r="12" fill="#3b82f6" />
+  <text x="120" y="162" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold">Alex Morgan</text>
+  <text x="120" y="177" fill="#10b981" font-family="sans-serif" font-size="10">94% AI Match</text>
+
+  <!-- Candidate Card 2 -->
+  <rect x="80" y="210" width="160" height="55" rx="6" fill="#1a2234" stroke="#2d3748" />
+  <circle cx="100" cy="235" r="12" fill="#6366f1" />
+  <text x="120" y="232" fill="#cbd5e1" font-family="sans-serif" font-size="11" font-weight="600">Sara Chen</text>
+  <text x="120" y="247" fill="#38bdf8" font-family="sans-serif" font-size="10">88% AI Match</text>
+
+  <!-- Candidate Card 3 -->
+  <rect x="80" y="275" width="160" height="55" rx="6" fill="#1a2234" stroke="#2d3748" />
+  <circle cx="100" cy="300" r="12" fill="#14b8a6" />
+  <text x="120" y="297" fill="#cbd5e1" font-family="sans-serif" font-size="11" font-weight="600">David Kim</text>
+  <text x="120" y="312" fill="#f59e0b" font-family="sans-serif" font-size="10">79% AI Match</text>
+
+  <!-- Right Content: Skills Radar & Semantic Match -->
+  <rect x="270" y="100" width="460" height="340" rx="8" fill="#1a2234" stroke="#2d3748" stroke-width="1" />
+  
+  <!-- Header inside card -->
+  <text x="290" y="130" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="bold">Candidate Skills Gap Analysis</text>
+  <text x="290" y="150" fill="#94a3b8" font-family="sans-serif" font-size="12">Target Role: Senior Full Stack Engineer (Next.js + Node)</text>
+
+  <!-- Match Metric Bar -->
+  <rect x="290" y="175" width="420" height="24" rx="12" fill="#0f172a" />
+  <rect x="290" y="175" width="395" height="24" rx="12" fill="url(#glow-grad)" />
+  <text x="305" y="192" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold">Semantic Match Score: 94.2%</text>
+
+  <!-- Skills Breakdown Grid -->
+  <g transform="translate(290, 220)">
+    <!-- Skill 1 -->
+    <rect x="0" y="0" width="200" height="55" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+    <text x="15" y="24" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold">React &amp; Next.js 15</text>
+    <text x="15" y="42" fill="#10b981" font-family="sans-serif" font-size="11">Strong Alignment (100%)</text>
+    
+    <!-- Skill 2 -->
+    <rect x="220" y="0" width="200" height="55" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+    <text x="235" y="24" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold">Node.js / Express API</text>
+    <text x="235" y="42" fill="#10b981" font-family="sans-serif" font-size="11">Strong Alignment (95%)</text>
+
+    <!-- Skill 3 -->
+    <rect x="0" y="65" width="200" height="55" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+    <text x="15" y="89" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold">MongoDB &amp; MySQL</text>
+    <text x="15" y="107" fill="#10b981" font-family="sans-serif" font-size="11">Proficient (90%)</text>
+
+    <!-- Skill 4 - Gap identified -->
+    <rect x="220" y="65" width="200" height="55" rx="6" fill="#0f172a" stroke="#f59e0b" stroke-width="1" />
+    <text x="235" y="89" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold">Kubernetes &amp; CI/CD</text>
+    <text x="235" y="107" fill="#f59e0b" font-family="sans-serif" font-size="11">Gap Identified • Recommended</text>
+
+    <!-- Skill Gap Recommendation Callout -->
+    <rect x="0" y="135" width="420" height="60" rx="8" fill="#1e1b4b" stroke="#6366f1" stroke-width="1" />
+    <text x="15" y="158" fill="#c7d2fe" font-family="sans-serif" font-size="12" font-weight="bold">🤖 AI Recommendation:</text>
+    <text x="15" y="178" fill="#93c5fd" font-family="sans-serif" font-size="11">Applicant is exceptional in core stack; recommend 2-week fast-track in Docker/K8s.</text>
+  </g>
+</svg>

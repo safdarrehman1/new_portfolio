@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-fintek" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09061c" />
+      <stop offset="100%" stop-color="#1e1035" />
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg-fintek)" rx="16" />
+  <rect x="50" y="40" width="700" height="420" rx="12" fill="#130e24" stroke="#4c1d95" stroke-width="1.5" />
+  <rect x="50" y="40" width="700" height="40" rx="12" fill="#2e1065" />
+  <circle cx="75" cy="60" r="5" fill="#ef4444" />
+  <circle cx="95" cy="60" r="5" fill="#f59e0b" />
+  <circle cx="115" cy="60" r="5" fill="#10b981" />
+  <text x="400" y="65" fill="#e9d5ff" font-family="sans-serif" font-size="12" text-anchor="middle" font-weight="600">FinTekPay Next-Gen Virtual Banking &amp; API Sandbox</text>
+
+  <!-- 3D Card Visualizer -->
+  <g transform="translate(80, 120)">
+    <rect x="0" y="0" width="310" height="190" rx="16" fill="url(#card-grad)" stroke="#a855f7" stroke-width="2" />
+    <!-- Card Chip -->
+    <rect x="25" y="25" width="40" height="30" rx="6" fill="#fbbf24" opacity="0.9" />
+    <!-- Contactless icon -->
+    <path d="M260 30 A15 15 0 0 1 260 50 M268 25 A25 25 0 0 1 268 55" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+    
+    <text x="25" y="115" fill="#ffffff" font-family="monospace" font-size="18" font-weight="bold" letter-spacing="3">4892 •••• •••• 9104</text>
+    <text x="25" y="150" fill="#e9d5ff" font-family="sans-serif" font-size="11">CARDHOLDER</text>
+    <text x="25" y="168" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold">SAFDAR REHMAN</text>
+    
+    <text x="220" y="150" fill="#e9d5ff" font-family="sans-serif" font-size="11">EXPIRES</text>
+    <text x="220" y="168" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold">09/29</text>
+  </g>
+
+  <!-- Developer API Playground Snippet -->
+  <g transform="translate(420, 100)">
+    <rect x="0" y="0" width="310" height="335" rx="8" fill="#1c1630" stroke="#581c87" />
+    <rect x="0" y="0" width="310" height="35" rx="8" fill="#2e1065" />
+    <text x="15" y="22" fill="#c084fc" font-family="monospace" font-size="11">POST /v1/payments/create-intent</text>
+    
+    <!-- Code lines -->
+    <g transform="translate(15, 55)" font-family="monospace" font-size="11">
+      <text y="0" fill="#e9d5ff">const payment = await fintek.create({</text>
+      <text y="22" fill="#a855f7">  amount: <tspan fill="#34d399">25000</tspan>,</text>
+      <text y="44" fill="#a855f7">  currency: <tspan fill="#38bdf8">&quot;usd&quot;</tspan>,</text>
+      <text y="66" fill="#a855f7">  recipient: <tspan fill="#38bdf8">&quot;acct_9842&quot;</tspan>,</text>
+      <text y="88" fill="#a855f7">  instant_settlement: <tspan fill="#fbbf24">true</tspan></text>
+      <text y="110" fill="#e9d5ff">});</text>
+
+      <text y="145" fill="#6b7280">// Response (200 OK)</text>
+      <text y="167" fill="#34d399">{ status: &quot;succeeded&quot;, fee: 0.00 }</text>
+    </g>
+
+    <!-- Instant Execution Trigger -->
+    <rect x="15" y="270" width="280" height="45" rx="6" fill="#7c3aed" />
+    <text x="155" y="297" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">⚡ Send Test Webhook (200 OK)</text>
+  </g>
+</svg>
